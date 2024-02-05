@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "lsd",
+	"version": "${version}",
+	"name": "LSD",
+	"description": "Adds drugs and substances to Minecraft.\nWARNING: This mod does NOT promote the use of illicit substances in any way and it is only for educational or recreational purposes only.",
+
+	"authors": [
+		"quack95"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GNU GPLv3",
+	"icon": "assets/lsd/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.quack95.lsd.LSD"
+		],
+		"client": [
+			"net.quack95.lsd.LSDClient"
+		],
+		"fabric-datagen": [
+			"net.quack95.lsd.LSDDataGenerator"
+		]
+	},
+	"mixins": [
+		"lsd.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
